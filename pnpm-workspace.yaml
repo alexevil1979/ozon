@@ -1,0 +1,4 @@
+# pnpm workspace: apps + packages. Services (Go) are not in workspace.
+packages:
+  - "apps/*"
+  - "packages/*"

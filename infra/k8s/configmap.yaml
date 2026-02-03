@@ -1,0 +1,14 @@
+# Shared config for dev. Production: use Secrets + external config.
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: marketplace-config
+  namespace: marketplace
+data:
+  DATABASE_URL: "postgres://marketplace:marketplace_dev_secret@postgres:5432/marketplace?sslmode=disable"
+  REDIS_URL: "redis://redis:6379"
+  OPENSEARCH_URL: "http://opensearch:9200"
+  JWT_SECRET: "dev_jwt_secret_change_in_production"
+  ADMIN_API_KEY: "dev_admin_secret_change_in_production"
+  CATALOG_URL: "http://catalog:8082"
+  ORDER_API_URL: "http://order:8085"
