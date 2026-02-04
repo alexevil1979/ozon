@@ -30,6 +30,8 @@ cd services/admin && go run ./cmd/server   # admin :8086
 - `packages/ui`, `types`, `utils`, `config`, `eslint-config` — shared
 - `services/auth`, `user`, `catalog`, `search`, `order` — Go/TS services
 - `infra/` — docker-compose, k8s stubs
+- `docs/DEPLOY-VPS.md` — установка на VPS с Nginx (путь `/ssd/www/ozon`, домен `ozon.1tlt.ru`)
+- `docs/DEPLOY-VPS-APACHE.md` — установка на VPS с Apache (тот же путь и домен)
 
 ## Phase 2: Auth + User (v0.2)
 

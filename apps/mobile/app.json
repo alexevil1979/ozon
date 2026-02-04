@@ -1,0 +1,14 @@
+{
+  "expo": {
+    "name": "Marketplace Mobile",
+    "slug": "marketplace-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "platforms": ["ios", "android"],
+    "splash": {
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": ["**/*"]
+  }
+}
+
